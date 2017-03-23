@@ -10,11 +10,13 @@ namespace Login_NoGUI
     {
         private string mUsername;
         private string mPassword;
+        private int mBirthYear;
 
-        public User(string pUsername, string pPassword)
+        public User(string pUsername, string pPassword, int pBirthYear)
         {
             mUsername = pUsername;
             mPassword = pPassword;
+            mBirthYear = pBirthYear;
 
             Program.users.Add(mUsername,this);
         }
